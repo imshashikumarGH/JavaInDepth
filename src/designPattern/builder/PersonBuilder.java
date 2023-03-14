@@ -1,14 +1,19 @@
 package designPattern.builder;
 
-public class PersonBuilder {
+public class PersonBuilder<SELF extends PersonBuilder<SELF>> {
     protected Person person = new Person();
 
-    public PersonBuilder name(String name) {
+    public SELF name(String name) {
         person.setName(name);
-        return this;
+        return (SELF) this;
     }
 
     public Person build() {
         return person;
+    }
+
+    // to override in EmployeeBuilder
+    protected PersonBuilder self() {
+        return (SELF) this;
     }
 }

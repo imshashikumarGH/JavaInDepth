@@ -2,8 +2,9 @@ package designPattern.builder;
 
 public class Demo {
     public static void main(String[] args) {
-        PersonBuilder personBuilder = new PersonBuilder();
-        Person shashi = personBuilder.name("Shashi").build();
+        EmployeeBuilder personBuilder = new EmployeeBuilder();
+        Person shashi = personBuilder.name("Shashi")
+                .position("developer").build();
         System.out.println(shashi);
     }
 }
