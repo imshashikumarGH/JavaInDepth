@@ -1,4 +1,4 @@
-package designPattern.builder;
+package designPattern.builder.fluent;
 
 public class EmployeeBuilder extends PersonBuilder<EmployeeBuilder> {
 

@@ -1,4 +1,4 @@
-package designPattern.builder;
+package designPattern.builder.fluent;
 
 public class PersonBuilder<SELF extends PersonBuilder<SELF>> {
     protected Person person = new Person();

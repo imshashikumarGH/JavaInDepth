@@ -1,4 +1,4 @@
-package designPattern.builder;
+package designPattern.builder.fluent;
 
 public class Demo {
     public static void main(String[] args) {
